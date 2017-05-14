@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mobilebank.ru.mobilebank.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="304dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authorization_status"
+        tools:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="224dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/login"
+        app:layout_constraintLeft_toLeftOf="@+id/login"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="222dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Login"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/tableLayout"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/tableLayout"
+        app:layout_constraintHorizontal_bias="0.506"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/LoginEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/password"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/password"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/sectionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MobileBank"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/authorization_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="..."
+        app:layout_constraintTop_toBottomOf="@+id/sectionId"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/sectionId"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/sectionId" />
+
+    <Button
+        android:id="@+id/getAllInBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Общий баланс в Банке"
+        app:layout_constraintTop_toBottomOf="@+id/authorization_status"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/authorization_status"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/authorization_status" />
+
+    <EditText
+        android:id="@+id/branchId"
+        android:layout_width="133dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Имя филиала"
+        android:layout_marginLeft="-34dp"
+        app:layout_constraintLeft_toLeftOf="@+id/authorization_status"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/authorization_status"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/getAllInBank"
+        app:layout_constraintHorizontal_bias="0.314" />
+
+    <Button
+        android:id="@+id/allInBranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Баланс в филиале"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/branchId"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/branchId"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/branchId" />
+
+    <Button
+        android:id="@+id/AllDetailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="17dp"
+        android:text="Детальный отчет"
+        app:layout_constraintLeft_toLeftOf="@+id/allInBranch"
+        app:layout_constraintRight_toRightOf="@+id/allInBranch"
+        app:layout_constraintTop_toBottomOf="@+id/allInBranch" />
+
+    <Button
+        android:id="@+id/backAccounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/AllDetailed"
+        app:layout_constraintRight_toRightOf="@+id/AllDetailed"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintTop_toBottomOf="@+id/AllDetailed" />
+
+</android.support.constraint.ConstraintLayout>

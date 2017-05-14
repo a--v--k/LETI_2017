@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/authorization"
+            android:icon="@drawable/gdm"
+            android:title="Авторизация" />
+        <item
+            android:id="@+id/exchange_rate"
+            android:icon="@drawable/dollar"
+            android:title="Курсы валют" />
+        <item
+            android:id="@+id/accounts"
+            android:icon="@drawable/card"
+            android:title="Счета" />
+        <item
+            android:id="@+id/subscribe"
+            android:icon="@drawable/starfull"
+            android:title="Подписки" />
+    </group>
+
+    <item android:title="Связь">
+        <menu>
+            <item
+                android:id="@+id/contacts"
+                android:icon="@drawable/ekiga"
+                android:title="Контакты" />
+            <item
+                android:id="@+id/message"
+                android:icon="@drawable/faq"
+                android:title="Сообщение банку" />
+        </menu>
+    </item>
+
+</menu>
