@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MobileBank.jnlp">
+  <information>
+    <title>MobileBank</title>
+    <vendor>Vlastelina</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MobileBank.jar" size="18620" download="eager" />
+    <jar href="lib\commons-codec-1.9.jar" size="263965" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\fluent-hc-4.5.3.jar" size="31148" download="eager" />
+    <jar href="lib\httpclient-4.5.3.jar" size="747794" download="eager" />
+    <jar href="lib\httpclient-cache-4.5.3.jar" size="159642" download="eager" />
+    <jar href="lib\httpclient-win-4.5.3.jar" size="17489" download="eager" />
+    <jar href="lib\httpcore-4.4.6.jar" size="323824" download="eager" />
+    <jar href="lib\httpmime-4.5.3.jar" size="41029" download="eager" />
+    <jar href="lib\jna-4.1.0.jar" size="914597" download="eager" />
+    <jar href="lib\jna-platform-4.1.0.jar" size="1464423" download="eager" />
+    <jar href="lib\json-simple-1.1.1.jar" size="23737" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MobileBank" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="mobilebank.MobileBank"  name="MobileBank" />
+  <update check="always"/>
+</jnlp>
